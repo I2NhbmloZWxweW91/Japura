@@ -1,5 +1,5 @@
 /*
-A simple implementation for `stack` DS using Vector in Java
+A simple implementation for `stack` ADT using Vector in Java
 */
 
 /* imports */
@@ -27,7 +27,7 @@ public class Stack<Object>{
     
     
     public Object pop(){
-        Object last_obj  = (Object) peek();
+        Object last_obj  = peek();
         this.stack_vector.remove(this.stack_vector.size() - 1);
         return (last_obj);
     }
