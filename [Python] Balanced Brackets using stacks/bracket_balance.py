@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+
+#### this is dirty
 def isBalanced(s):
 
     openl = ['{', '[', '(']
