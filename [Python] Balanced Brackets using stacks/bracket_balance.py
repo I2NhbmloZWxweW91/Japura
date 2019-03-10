@@ -13,10 +13,10 @@ def isBalanced(s):
             else:
                 temp = stack.pop()
                 if pair[i] != temp:
-                    return True
+                    return False
         except:
             pass
-    return False
+    return True
 
 
 s = '({[{[}]})'
