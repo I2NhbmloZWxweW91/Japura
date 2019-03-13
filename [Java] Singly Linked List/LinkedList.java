@@ -1,12 +1,14 @@
-/* This will wrap the Node */
+package sll;
+
+// this will wrap Node class 
 public class LinkedList {
     
     Node node;
     
-
     public LinkedList(double value) {
         this.node = new Node(value, null);
     }
+    
     
     public void addToFront(double value){
         Node new_node = new Node(value, this.node);
@@ -90,7 +92,16 @@ public class LinkedList {
         temp_node.next = null;
     }
 
+    public void delete(double value){
+        Node temp_node = this.node;
+        while(temp_node.next.value != value){
+            temp_node = temp_node.next;
+        }
+        temp_node.next = temp_node.next.next;
+    }
     
+    
+    /* additional method to print all elements */
     public void print_all(){
         Node temp_node = this.node;  
         while (true){

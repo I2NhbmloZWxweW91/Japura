@@ -1,3 +1,6 @@
+package sll;
+
+/* Node class for Singly Linked List */
 public class Node {
     
     double value;

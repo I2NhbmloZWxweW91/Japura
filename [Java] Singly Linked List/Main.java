@@ -1,4 +1,4 @@
-package pkg907lab05;
+package sll;
 
 
 public class Main {
@@ -36,6 +36,10 @@ public class Main {
         
         ld.addToEnd(44.5);
         ld.addToEnd(3435.45);
+        ld.print_all();
+        System.out.println("- -- - -- - -");
+        
+        ld.delete(22.33);
         ld.print_all();
         System.out.println("- -- - -- - -");
     }
